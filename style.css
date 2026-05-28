@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #d9d2e9;
+    color: #333;
+  }
+header {
+    background-color: #8f7fb3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font: bold 24px 'Trebuchet MS', serif;
+    }
+.flower-sidebar {
+  float: left;
+    width: 35%;
+ background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+.main-content {
+    margin-left: 38%;
+    background-color: #fff;
+    padding: 20px;
+border-radius: 8px;
+ box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-height: 500px;
+  }
+.flower-item {
+  margin-bottom: 25px;
+ border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    }
+.flower-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+ padding-bottom: 0; }
+.flower-name {
+    color: #665887;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+.learn-more-link {
+  display: inline-block;
+ margin-top: 5px;
+  color: #68b0ab;
+ text-decoration: none;
+  font-weight: bold;
+}
+.learn-more-link:hover {
+    text-decoration: underline;
+    color: #4a7c59;}
+ .clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+.gallery-title {
+    margin-top: 40px;
+    color: #665887;
+    border-bottom: 2px solid #665887;
+ padding-bottom: 5px;
+        }
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+   margin-top: 20px;
+ }
+.gallery-card {
+ background-color: #f4f4f4;
+  border-radius: 6px;
+ overflow: hidden;
+ text-align: center;
+ border: 1px solid #ddd;
+ height:200px;
+}
+.gallery-card img {
+ width: 100%;
+ height: 150px;
+    object-fit: cover; 
+background-color: #ccc; 
+ }
+.gallery-card p {
+   margin: 10px 0;
+  font-weight: bold;
+ }
+.clearfix::after {
+ content: "";
+ clear: both;
+   display: table;
+  }
