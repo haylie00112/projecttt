@@ -54,44 +54,108 @@ border-radius: 8px;
   font-weight: bold;
 }
 .learn-more-link:hover {
-    text-decoration: underline;
-    color: #4a7c59;}
+ text-decoration: underline;
+  color: #4a7c59;}
  .clearfix::after {
   content: "";
   clear: both;
   display: table; }
 .gallery-title {
-    margin-top: 40px;
-    color: #665887;
-    border-bottom: 2px solid #665887;
+  margin-top: 40px;
+ color: #665887;
+ border-bottom: 2px solid #665887;
  padding-bottom: 5px;
-        }
+ }
 .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-   margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  height:150px;
+  margin-top: 20px;
+}
+.image-gallery-2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  height:250px;
+  width: 250px;
+  margin-top: 20px;
  }
 .gallery-card {
- background-color: #f4f4f4;
-  border-radius: 6px;
- overflow: hidden;
- text-align: center;
- border: 1px solid #ddd;
- height:200px;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #ddd;
+    
+    /* Forces the container to be an exact square */
+    width: 200px; 
+    height: 200px;
+    
+    /* Layout alignment */
+    display: flex;
+    flex-direction: column;
 }
+
 .gallery-card img {
- width: 100%;
- height: 150px;
-    object-fit: cover; 
-background-color: #ccc; 
- }
+    width: 100%;
+    height: 150px;       /* Fixed height for the image boundary */
+    object-fit: cover;   /* Crops and centers the image perfectly inside the 150px boundary */
+    background-color: #ccc; 
+    display: block;
+}
+
 .gallery-card p {
-   margin: 10px 0;
-  font-weight: bold;
- }
+    margin: 0;
+    height: 50px;        /* Allocates exactly 50px for the text area */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+}
 .clearfix::after {
  content: "";
  clear: both;
-   display: table;
+ display: table;
   }
+
+
+
+
+h3 {
+  color: #665887;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-family: 'Trebuchet MS', serif;
+}
+
+.back-home-btn {
+ display: block;
+  text-align: center;
+  background-color: #665887;
+  color: white;
+  padding: 10px 15px;
+ text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 15px;
+ margin-bottom: 25px;
+  transition: background-color 0.2s ease;
+}
+
+.back-home-btn:hover {
+ background-color: #8f7fb3;
+}
+
+.sidebar-meta {
+ margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+ font-size: 0.9em;
+ color: #555;
+}
+
+.sidebar-meta p {
+ margin: 5px 0;
+}
